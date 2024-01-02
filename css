@@ -1,1 +1,128 @@
+body{
+    margin: 0;
+}
 
+.logo{
+    display: flex;
+}
+
+.principal{
+    background-color: #800080;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.principal2{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-ancla{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.menu-boton{
+    gap: 10px;
+    display: flex;
+}
+
+.boton{
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    background: transparent;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.boton2{
+    background: rgb(255, 255, 255);
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5;
+}
+
+.boton:hover .boton2{
+    width: 100%;
+}
+
+.primera-vista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicios{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.servicio1{
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    justify-items: center;
+    display: grid;
+}
+
+.precios{
+    background-color: rgb(56, 56, 78);
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.descripcion{
+    height: max-content;
+    width: 300px;
+    background-color: aquamarine;
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width: 1250px) {
+    #Servicios {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+footer{
+    background-color: grey;
+    height: 200px;
+}
