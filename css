@@ -20,7 +20,7 @@ body{
     gap: 10px;
 }
 
-.menu-ancla{
+.items{
     text-decoration: none;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,6 +29,20 @@ body{
     border: 2px solid black;
     border-radius: 10px 10px;
     padding: 0px 10px 0px 10px;
+    
+}
+
+.menu-ancla{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
+    overflow: hidden;
+}
+
+.items:hover{
+    background: whitesmoke;
+    transition: .5s;
 }
 
 .menu-boton{
@@ -58,12 +72,11 @@ body{
     position: absolute;
     left: 0%;
     bottom: 0%;
-    z-index: -1;
-    transition: 0.5;
 }
 
-.boton:hover .boton2{
-    width: 100%;
+.boton:hover{
+    background: whitesmoke;
+    transition: .5s;
 }
 
 .primera-vista{
@@ -72,10 +85,39 @@ body{
     align-items: center;
 }
 
+.banner1{
+    width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner1 {
+      width: 100%;
+    }
+  }
+
 #Nosotros{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+@media (max-width: 750px) {
+    #Nosotros {
+        flex-direction: column;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 8px;
+    }
+}
+
+.infonosotros{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
 }
 
 #servicios{
@@ -90,35 +132,46 @@ body{
 .servicio1{
     flex: 1;
     max-width: 400px;
-    padding: 20px;
+    padding: 30px;
     justify-items: center;
     display: grid;
+    height: 0px;
 }
 
 .precios{
     background-color: rgb(56, 56, 78);
     border-radius: 10px 10px 0px 0px;
     height: 80px;
-    width: 300px;
+    width: 200px;
     justify-content: center;
     display: flex;
     align-items: center;
     color: white;
-    font-size: larger;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
 }
 
 .descripcion{
     height: max-content;
-    width: 300px;
+    width: 200px;
     background-color: aquamarine;
     border-radius: 0px 0px 10px 10px;
+    height: 200px;
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 750px) {
     #Servicios {
         flex-direction: column;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
     }
 }
 
