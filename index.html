@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/responsive.css">
@@ -9,10 +9,10 @@
 <body>
     <div class="principal">
         <div class="logo"> 
-            <a href="responsive.html"><img src="imagenes/arunalogo.png""></a>
+            <a href="responsive.html"><img src="imagenes/arunalogo.png"></a>
         </div>
         <div class="principal2">
-            <nav>
+            <nav class="ham">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
@@ -26,6 +26,11 @@
         <div class="menu-boton">
             <button type="button" class="boton"><span class="boton2"></span>Inicio</button>
             <button type="button" class="boton"><span class="boton2"></span>Registrarse</button>
+        </div>
+        <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+                <div></div>
+            </div>
         </div>
     </div>
     <div class="primera-vista">
@@ -91,6 +96,20 @@
                     Envio de comprobantes de pago
                 </li>
             </div>
+        </div>
+    </div>
+    <div id="Contacto">
+        <div class="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22945.325124428688!2d-79.5380534365337!3d8.99727919009443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca90dd84b3e1f%3A0x923f1275330174ea!2sPH%20Splendor%20By%20The%20Park!5e0!3m2!1ses!2spa!4v1704728351020!5m2!1ses!2spa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="correo">
+            <form action="" method="post" >
+                <h4 class="contacto2">ENVIANOS UN CORREO</h4>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="Nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="Apellido">
+            </form>
         </div>
     </div>
 </body>
