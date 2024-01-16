@@ -4,20 +4,64 @@ body{
 
 .logo{
     display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 952px){
+    .logo{
+        display: none;
+    }
 }
 
 .principal{
     background-color: #800080;
     height: 100px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: space-around;
-    gap: 10px;
+}
+
+.ham{
+    display: none;
 }
 
 .principal2{
     display: flex;
+    justify-content: center;
     gap: 10px;
+}
+
+@media (max-width: 952px){
+    .principal2{
+        flex-direction: column;
+    }
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .logo{
+        padding-left: 20px;
+    }
+}
+    
+@media (max-width: 858px){
+    .checkbtn{
+        display: flex;
+    }
 }
 
 .items{
@@ -28,8 +72,7 @@ body{
     font-size: large;
     border: 2px solid black;
     border-radius: 10px 10px;
-    padding: 0px 10px 0px 10px;
-    
+    padding: 0px 10px 0px 10px;   
 }
 
 .menu-ancla{
@@ -40,6 +83,12 @@ body{
     overflow: hidden;
 }
 
+@media (max-width: 952px){
+    .menu-ancla{
+        font-size: 15px;
+    }
+}
+
 .items:hover{
     background: whitesmoke;
     transition: .5s;
@@ -48,6 +97,7 @@ body{
 .menu-boton{
     gap: 10px;
     display: flex;
+    justify-content: center;
 }
 
 .boton{
@@ -59,10 +109,16 @@ body{
     font-weight: bold;
     background: transparent;
     overflow: hidden;
-    text-transform: uppercase;
     position: relative;
     width: auto;
     text-align: center;
+    font-size: large;
+}
+
+@media (max-width: 952px){
+    .boton{
+        font-size: 10px;
+    }
 }
 
 .boton2{
@@ -122,7 +178,9 @@ body{
 
 #servicios{
     background-color: whitesmoke;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     gap: 15px;
     height: 100vh;
@@ -150,6 +208,7 @@ body{
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
+    box-shadow: 0 0 10px black;
 }
 
 .descripcion{
@@ -157,12 +216,13 @@ body{
     width: 200px;
     background-color: aquamarine;
     border-radius: 0px 0px 10px 10px;
-    height: 200px;
+    height: 150px;
     text-decoration: none;
     list-style: none;
     display: grid;
     align-items: center;
     justify-items: center;
+    box-shadow: 0 0 10px black;
 }
 
 @media (max-width: 750px) {
@@ -173,6 +233,34 @@ body{
         align-items: center;
         justify-items: center;
     }
+}
+
+#Contacto{
+    gap: 10px;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    #Contacto {
+        flex-direction: column;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 8px;
+    }
+}
+
+.correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto2{
+    text-align: center;
 }
 
 footer{
