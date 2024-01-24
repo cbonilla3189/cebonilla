@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/pruebaindex.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <title>ARUNA PANAMA</title>
 </head>
 <body>
@@ -26,10 +26,27 @@
                             <div class="dropdown">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="#">Redes y telecomunicaciones</a>
+                                        <a href="servicios.html">Redes y telecomunicaciones</a>
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="#">Cyberseguridad</a>
+                                        <a href="servicios.html" id="#Cyberseguridad">Cyberseguridad</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="servicios.html" id="#Cyberseguridad">Páginas web y aplicaciones<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Diseño de páginas web</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Dominio y Hosting</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Programación de aplicaciones</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="dropdown-link">
                                         <a href="#">Videovigilancia<i class="fas fa-caret-down"></i></a>
@@ -64,15 +81,15 @@
                             </div>
                         </li>
                         <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Contacto</a>
+                            <a href="#Contacto">Contacto</a>
                         </li>
                         <li class="nav-link" style="--i: 1.35s">
-                            <a href="#">Soporte</a>
+                            <a href="https://www.youtube.com/">Soporte</a>
                         </li>
                     </ul>
                 </div>
                 <div class="log-sign" style="--i: 1.8s">
-                    <a href="#" class="btn transparent">Iniciar</a>
+                    <a href="iniciosesion.html" class="btn transparent">Iniciar</a>
                     <a href="#" class="btn solid">Registrarse</a>
                 </div>
             </div>
@@ -99,8 +116,33 @@
         </div>
     </div>
     <div id="Servicios">
-        <div class="">
-            <button><a href="servicios.html">Mas Servicios</a></button>
+        <div class="servicios-generales">
+            <h3>Redes y telecomunicaciones</h3>
+            <h3>Cyberseguridad</h3>
+            <h3>Programación Web y aplicaciones</h3>
+        </div>
+        <div class="servicios-generales2">
+            <h3>Videovigilancia</h3>
+            <h3>Inteligencia de negocio</h3>
+        </div>
+        <div class="mas-servicios">
+            <button class="mas-servicios2"><a href="servicios.html">Mas Servicios</a></button>
+        </div>
+    </div>
+    <div id="Contacto">
+        <div class="formulario">
+            <h3 class="titulo">Contactanos</h3>
+            <form action="https://formsubmit.co/it.manager@ois.edu.pa" class="formulario-correo" method="post">
+                <label for="name" class="etiqueta">Nombre</label><input class="entrada" type="text" name="Nombre">
+                <label for="apellido" class="etiqueta">Apellido</label><input type="text" name="Apellido">
+                <label for="email" class="etiqueta">Correo Electronico</label><input type="email" name="email" id="email">
+                <label for="asunto" class="etiqueta">Asunto</label><input type="text" name="asunto" id="asunto">
+                <label for="comentarios" class="etiqueta">Comentarios</label><textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                <input type="submit" class="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6379622346894!2d-79.51196452629941!3d9.005421291054986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca90dd84b3e1f%3A0x923f1275330174ea!2sPH%20Splendor%20By%20The%20Park!5e0!3m2!1ses-419!2spa!4v1705698948631!5m2!1ses-419!2spa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </body>
