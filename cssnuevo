@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -460,9 +461,10 @@ section{
 }
 
 #Nosotros{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
     height: 100vh;
 }
 
@@ -482,4 +484,116 @@ section{
     align-items: center;
     text-align: center;
     max-width: 400px;
+}
+
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.contenedor-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #69bde7;
+}
+
+#Servicios{
+    background-color: #69bde7;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.servicios-generales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.servicios-generales2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.mas-servicios{
+    display: flex;
+    justify-content: center;
+}
+
+.mas-servicios2{
+    height: 30px;
+}
+
+#Contacto{
+    background: linear-gradient(
+        50deg,
+        rgb(148, 160, 236) 50%,
+        #800080);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formulario{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.formulario-correo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input , textarea{
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 5px 14px;
+}
+
+:focus{
+    outline: 2px solid #800080;
+}
+
+.etiqueta{
+    padding: 5px;
+}
+
+.submit{
+    margin-top: 10px;
+    width: 80px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: white;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.enviar{
+    background: white;
+    border: solid;
+    border-radius: 15px 15px 15px 15px;
+    width: 100px;
+    height: 25px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
 }
