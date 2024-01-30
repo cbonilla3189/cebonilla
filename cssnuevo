@@ -553,17 +553,23 @@ section{
 .formulario-correo{
     display: flex;
     flex-direction: column;
-    
+    font-weight: 600;
 }
 
 input , textarea{
     border-radius: 25px;
     font-size: 15px;
     padding: 5px 14px;
+    background-color: transparent;
+    border: solid;
+}
+
+input:hover , textarea:hover{
+    background-color: white;
 }
 
 :focus{
-    outline: 2px solid #800080;
+    outline: 5px solid #800080;
 }
 
 .etiqueta{
@@ -572,28 +578,58 @@ input , textarea{
 
 .submit{
     margin-top: 10px;
-    width: 80px;
+    width: 300px;
     height: 25px;
     border: 2px solid;
     border-radius: 25px;
-    background-color: white;
+    background-color: transparent;
     transition: .3s;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+.submit:hover{
+    color: white;
+    background-color: lightgreen;
 }
 
 .titulo{
     font-size: 40px;
 }
 
-.enviar{
-    background: white;
-    border: solid;
-    border-radius: 15px 15px 15px 15px;
-    width: 100px;
-    height: 25px;
-}
-
 .mapa{
     display: flex;
     justify-content: center;
+}
+
+.boton-ws{
+    position: fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.boton-ws:hover{
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .boton-ws{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
 }
