@@ -32,7 +32,21 @@
                                         <a href="servicios.html">Redes y telecomunicaciones</a>
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="servicios.html" id="#Cyberseguridad">Cyberseguridad</a>
+                                        <a href="servicios.html" id="#Cyberseguridad">Ciberseguridad<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Auditoria de ciberseguridad</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Pentesting</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Control de reisgo informatico</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="dropdown-link">
                                         <a href="servicios.html" id="#Cyberseguridad">Páginas web y aplicaciones<i class="fas fa-caret-down"></i></a>
@@ -108,7 +122,7 @@
     </div>
     <div id="Nosotros">
         <div class="infonosotros">
-            <h2>Empresa panameña fundada por dos ingenieros, en el 2023.
+            <h2>Empresa panameña fundada por dos ingenieros en el 2023.
                 Especializados en la ciberseguridad, programación de servidores, 
                 automatización de sistemas y tareas para tu empresa. Trabajamos en la inteligencia
                 de negocio, dando detalles predictivos y concretos de como tu empresa esta evolucionando.
@@ -120,8 +134,13 @@
     </div>
     <div id="Servicios">
         <div class="servicios-generales">
-            <h3>Redes y telecomunicaciones</h3>
-            <h3>Cyberseguridad</h3>
+            <div class="telecom" style="background-image: url('imagenes/telecom.jpg');">
+                <h3>Redes y telecomunicaciones</h3>
+            </div>
+            <div>
+                <h3>Cyberseguridad</h3>
+            </div>
+            
             <h3>Programación Web y aplicaciones</h3>
         </div>
         <div class="servicios-generales2">
@@ -135,13 +154,15 @@
     <div id="Contacto">
         <div class="formulario">
             <h3 class="titulo">Contactanos</h3>
-            <form action="https://formsubmit.co/it.manager@ois.edu.pa" class="formulario-correo" method="post">
+            <form action="https://formsubmit.co/ventas@arunapanama.com" class="formulario-correo" method="post">
                 <label for="name" class="etiqueta">Nombre</label><input class="entrada" type="text" name="Nombre">
                 <label for="apellido" class="etiqueta">Apellido</label><input type="text" name="Apellido">
                 <label for="email" class="etiqueta">Correo Electronico</label><input type="email" name="email" id="email">
                 <label for="asunto" class="etiqueta">Asunto</label><input type="text" name="asunto" id="asunto">
                 <label for="comentarios" class="etiqueta">Comentarios</label><textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
                 <input type="submit" class="submit" value="Enviar">
+                <input type="hidden" name="_next" value="https://arunapanama.com">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
         <div class="mapa">
