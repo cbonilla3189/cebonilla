@@ -21,7 +21,7 @@ a{
 .encabezado{
     position: sticky;
     top: 0px;
-    background-color: #800080;
+    background-color: #561d9c;
     width: 100%;
     z-index: 1000;
 }
@@ -462,7 +462,7 @@ section{
 
 #Nosotros{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2 , 1fr);
     align-items: center;
     justify-items: center;
     height: 100vh;
@@ -488,7 +488,7 @@ section{
 
 .contenedor-servicios{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2 , 1fr);
     height: 500px;
 }
 
@@ -500,35 +500,70 @@ section{
 }
 
 #Servicios{
-    background-color: #69bde7;
     height: 100vh;
     display: grid;
-    align-items: center;
-}
-
-.telecom{
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .servicios-generales{
     display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+}
+
+.servicios-generales div{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.servicios-generales div h3{
+    color: white;
 }
 
 .servicios-generales2{
     display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
 }
 
-.mas-servicios{
+.servicios-generales2 div{
     display: flex;
     justify-content: center;
 }
 
-.mas-servicios2{
-    height: 30px;
+.mas-servicios{
+    display: grid;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.mas-servicios button{
+    border: solid 5px;
+    border-radius: 25px;
+    height: 50px;
+    width: 190px;
+    background-color: transparent;
+    transition: .8s;
+}
+
+.mas-servicios button a{
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.mas-servicios button:hover{
+    cursor: pointer;
+    background-color: #20ba5a;
 }
 
 #Contacto{
@@ -664,4 +699,23 @@ input:hover , textarea:hover{
         height:63px;
         line-height: 66px;
 	}
+}
+
+.cabecera{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    height: 70px;
+    background-color: #800080;
+}
+
+.ayuda{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.login_encabezado{
+    background-color: #561d9c;
 }
