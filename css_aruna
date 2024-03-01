@@ -142,7 +142,7 @@ section{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 10rem;
+    width: 20rem;
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
@@ -500,11 +500,23 @@ section{
 }
 
 #Servicios{
-    height: 100vh;
+    height: 150vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
 }
+
+@media (max-width: 750px) {
+    #Servicio {
+        flex-direction: column;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 8px;
+    }
+}
+
 
 .servicios-generales{
     display: grid;
@@ -536,6 +548,12 @@ section{
 .servicios-generales2 div{
     display: flex;
     justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.servicios-generales2 div h3{
+    color: white;
 }
 
 .mas-servicios{
@@ -549,9 +567,25 @@ section{
     border: solid 5px;
     border-radius: 25px;
     height: 50px;
-    width: 190px;
+    width: 550px;
     background-color: transparent;
     transition: .8s;
+}
+
+@media (max-width: 750px) {
+    #mas-servicios{
+        width: 50px;
+    }
+
+    .mas-servicios button{
+        border: solid 5px;
+        border-radius: 25px;
+        height: 50px;
+        width: 150px;
+        background-color: transparent;
+        transition: .8s;
+    }
+
 }
 
 .mas-servicios button a{
@@ -668,7 +702,8 @@ input:hover , textarea:hover{
     .mapa iframe{
         position:flex;
         height: 420px;
-        width: 90%;
+        width: 80%;
+        align-content: center;
     }    
 }
 
